@@ -95,6 +95,6 @@ Type |-> g++ main.cpp
 ```
 Type |-> ./a.out init
 <p align="center">
-  <img src="images/image.png" width="500"/>
+  <img src="Images/image.png" width="500"/>
 </p>
 ```
