@@ -79,3 +79,22 @@ You Should me in that folder where source files are there .
 ./git init
 ```
 To initialize the repo . Here instead of using the git , You can use the hole path if are in the other folder . 
+---
+
+## Detailed Explanation
+
+If you type ./git init it will creat hidden folder name as `.git` . and What this do , it will store the commits and Staging environment . 
+Put all files in the folder `Project 3` . 
+
+**Step 1**<br>
+```
+Type |-> g++ main.cpp
+
+```
+**Step 2**
+```
+Type |-> ./a.out init
+<p align="center">
+  <img src="images/image.png" width="500"/>
+</p>
+```
