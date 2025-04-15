@@ -86,13 +86,28 @@ To initialize the repo . Here instead of using the git , You can use the hole pa
 If you type ./git init it will creat hidden folder name as `.git` . and What this do , it will store the commits and Staging environment . 
 Put all files in the folder `Project 3` . 
 
-**Step 1**<br>
+**Step 1 :**<br>
 ```
 Type |-> g++ main.cpp
 
 ```
-**Step 2**
+**Step 2 :**
 ```
 Type |-> ./a.out init
- ![init](Images/image.png)
+ 
 ```
+![init](Images/image.png)
+![init](Images/Image1.png)
+Here , `.git` is the hidden folder . 
+
+**Step 3 :**<br>
+Now We will look into the `.git` folder . 
+![.git](Images/image2.png)
+Here commits foder `commits` folder contains the commits which will use the Linked list.And `staging_area` folder stores the your project . 
+
+**Step 4 :**<br>
+Let's add the html file in the Project folder .
+```
+Type |-> ./a.out add .
+```
+**Step 5 :**<br>
