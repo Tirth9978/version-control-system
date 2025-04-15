@@ -3,9 +3,9 @@
 ---
 
 ## 📌 Overview
-
+First of all thank you so much to Uzair Ahmed .  
 Welcome to the **Version Control System!**  
-We are the **🧙‍♂️ Bitwise Wizards**, and we have developed a fully functional version control system using **C++**.  
+We are the **🧙‍♂️ Bitwise Wizards**, and we have researched a fully functional version control system using **C++** for the project of IT206 from DAU.  
 This project replicates core functionalities of tools like **Git**, allowing users to:
 
 - 🗂️ Manage file versions  
@@ -34,7 +34,7 @@ This project replicates core functionalities of tools like **Git**, allowing use
 
 ## Project Overview 
 
-Here we have used the ` int main(int argc, char * argv[]) ` . This project is inspired by Git . This project supports committing changes and can be used with Git, which is a major advantage that many developers appreciate.
+Here They have used the ` int main(int argc, char * argv[]) ` . This project is inspired by Git . This project supports committing changes and can be used with Git, which is a major advantage that many developers appreciate.
 
 ---
 
@@ -48,7 +48,7 @@ Here we have used the ` int main(int argc, char * argv[]) ` . This project is in
 | File system operations    | Filesystem library (iterator) |
 | Commit/message storage    | String                        |
 
-And we have used the object oriented programming (OOPs). 
+And they have used the object oriented programming (OOPs). 
 
 ---
 ## 🚀 Project Source
@@ -56,9 +56,9 @@ And we have used the object oriented programming (OOPs).
 Explore the main source files of this project:
 
 📁 **Src/**  
-&nbsp;&nbsp;&nbsp;&nbsp;📄 [`main.cpp`](./Src/main.cpp) — Entry point of the project with the main logic.  
-&nbsp;&nbsp;&nbsp;&nbsp;📄 [`commitNode.cpp`](./Src/commitNode.cpp) — Handles commit node structure and logic.  
-&nbsp;&nbsp;&nbsp;&nbsp;📄 [`gitClass.cpp`](./Src/gitClass.cpp) — Contains the core Git-related class implementations.
+&nbsp;&nbsp;&nbsp;&nbsp;📄 [`main.cpp`](./code files/main.cpp) — Entry point of the project with the main logic.  
+&nbsp;&nbsp;&nbsp;&nbsp;📄 [`commitNode.cpp`](./code files/commitNodeList.cpp) — Handles commit node structure and logic.  
+&nbsp;&nbsp;&nbsp;&nbsp;📄 [`gitClass.cpp`](./code files/gitClass.cpp) — Contains the core Git-related class implementations.
 
 ---
 
