@@ -144,3 +144,37 @@ Type |-> ./a.out log
 ```
 ![log](Images/image4.png)
 Here `log` funtion gives us the inforantion of the commits we have did till now . 
+
+---
+
+# 🚀 Improvements We Made
+
+## 🧑‍💻 (1) Configuration of User
+
+We added a function called `config` ⚙️, which tracks the user login information 🪪.  
+The first time a user types `init` or any Git command, it prompts the user to configure their identity.
+
+![config](Images/image5.png)
+
+👉 To configure the user:
+
+```
+./a.out config <User ID>
+```
+![config](Images/image6.png)
+
+## 📖 (2) Addition of the `--help` Command
+
+We added the `--help` command ❓ to display all available commands and their usage 📋.  
+It helps users understand how to use the version control system with ease 💡.
+```
+./a.out --help
+```
+
+# 👨‍🔬 Researchers & 👥 Contributors
+
+1. 👨‍💻 [Tirth Patel](https://github.com/Tirth9978)  
+2. 👨‍💻 [Raj Patel](https://github.com/Raj-Patel7807)  
+3. 👨‍💻 [Shlok Patel](https://github.com/Shlok-Patel-007)  
+4. 👨‍💻 [Prakriti Pandey](https://github.com/PrakritiPandey2024)
+
