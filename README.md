@@ -5,7 +5,7 @@
 ## 📌 Overview
 First of all thank you so much to Uzair Ahmed .  
 Welcome to the **Version Control System!**  
-We are the **🧙‍♂️ Bitwise Wizards**, and we have researched a fully functional version control system using **C++** for the project of IT206 from DAU.  
+We are the **🧙‍♂️ Bitwise Wizards**, and we have researched a fully functional version control system using **C++** for the project of **IT206** from DAU.  
 This project replicates core functionalities of tools like **Git**, allowing users to:
 
 - 🗂️ Manage file versions  
@@ -78,8 +78,10 @@ You Should me in that folder where source files are there .
 ```
 ./git init
 ```
+
 To initialize the repo . Here instead of using the git , You can use the hole path if are in the other folder . 
----
+
+
 
 ## Detailed Explanation
 
@@ -112,4 +114,16 @@ Type |-> ./a.out add .
 ```
 **Step 5 :**<br>
 
-I will start . 
+Let's Commit the git repo . 
+```
+Type |-> ./a.out commit -m "<Commant>"
+```
+![commit](Images/image3.png)
+
+**Step 6**
+```
+Type |-> ./a.out log
+```
+![log](Images/image4.png)
+Here `log` funtion gives us the inforantion of the commits we have did till now . 
+
