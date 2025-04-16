@@ -20,7 +20,7 @@ This project replicates core functionalities of tools like **Git**, allowing use
 
 ## File Structure
 ```
-📦 Tetris_Game
+📦 Version Control System 
  └── 💚 Sec                    → Code Files 
         └── main.cpp
         └── commitNode.cpp
