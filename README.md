@@ -61,6 +61,20 @@ Explore the main source files of this project:
 &nbsp;&nbsp;&nbsp;&nbsp;📄 [`gitClass.cpp`](./code files/gitClass.cpp) — Contains the core Git-related class implementations.
 
 ---
+## Running Path :
+```
+[ main.cpp ] -> [ gitClass.cpp ] -> [ commitNodeList.cpp ]
+          ⬇️
+Commands handing via argv/argc
+          ⬇️
+File Operation and staging 
+          ⬇️
+Linked List commits
+          ⬇️
+File version Snapshort in Directions
+
+```
+
 
 ## Improvement We did 
 
@@ -83,17 +97,20 @@ To initialize the repo . Here instead of using the git , You can use the hole pa
 
 
 
-## Detailed Explanation
+## 📘 Detailed Explanation
 
-If you type ./git init it will creat hidden folder name as `.git` . and What this do , it will store the commits and Staging environment . 
-Put all files in the folder `Project 3` . 
+If you type `./a.out init`, it will create a hidden folder named `.git`.  
+It will store the commits and the staging environment.  
+Put all files in the folder `Project 3`.
 
-**Step 1 :**<br>
+---
+
+### 🛠️ Step 1: Compile the Code
+
 ```
-Type |-> g++ main.cpp
-
+bash : g++ main.cpp
 ```
-**Step 2 :**
+### Step 2: Adding to the Staging Area 🧺✨
 ```
 Type |-> ./a.out init
  
@@ -102,17 +119,18 @@ Type |-> ./a.out init
 ![init](Images/Image1.png)
 Here , `.git` is the hidden folder . 
 
-**Step 3 :**<br>
+### 🗂️ Step 3: Explore the .git Folder 🔍📁<br>
 Now We will look into the `.git` folder . 
 ![.git](Images/image2.png)
 Here commits foder `commits` folder contains the commits which will use the Linked list.And `staging_area` folder stores the your project . 
 
-**Step 4 :**<br>
+### ➕ Step 4: Add Files to Staging Area 📄✨
+
 Let's add the html file in the Project folder .
 ```
 Type |-> ./a.out add .
 ```
-**Step 5 :**<br>
+### 📝 Step 5: Commit the Changes ✅🗃️
 
 Let's Commit the git repo . 
 ```
@@ -120,10 +138,9 @@ Type |-> ./a.out commit -m "<Commant>"
 ```
 ![commit](Images/image3.png)
 
-**Step 6**
+### 📜 Step 6: View Commit History 🕘🧾
 ```
 Type |-> ./a.out log
 ```
 ![log](Images/image4.png)
 Here `log` funtion gives us the inforantion of the commits we have did till now . 
-

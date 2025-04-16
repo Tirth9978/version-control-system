@@ -97,6 +97,7 @@ void gitClass::gitCommit(string msg)
     list.addOnTail(msg);
 }
 
+
 void gitClass::gitRevert(string commitHash)
 {
     list.revertCommit(commitHash);

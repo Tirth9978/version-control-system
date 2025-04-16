@@ -86,6 +86,7 @@ int main(int argc, char *argv[])
             {
                 string argumentC = string(argv[2]);
                 if(argumentC == "HEAD")
+                
                 {
                     gitClassObj.gitRevert(argumentC);
                     cout << "The project is now at HEAD" << endl;
