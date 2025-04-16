@@ -15,52 +15,124 @@ using namespace std;
 //---------------------
 
 #ifdef _WIN32
-    const string configFileName = "config.txt"; // Windows (hidden using attrib)
+const string configFileName = "config.txt"; // Windows (hidden using attrib)
 #else
-    const string configFileName = ".config.txt"; // Linux/macOS (hidden by name)
+const string configFileName = ".config.txt"; // Linux/macOS (hidden by name)
 #endif
 
-bool config() {
+bool config()
+{
     auto path = filesystem::current_path();
-    for (const auto &entry : filesystem::directory_iterator(path)) {
-        if (entry.path().filename() == configFileName) {
+    for (const auto &entry : filesystem::directory_iterator(path))
+    {
+        if (entry.path().filename() == configFileName)
+        {
             return true;
         }
     }
     return false;
 }
+
 int main(int argc, char *argv[])
 {
     gitClass gitClassObj;
     if (argc >= 2)
     {
         string argument = string(argv[1]);
-        if (argument == "config") {
-    string userName = string(argv[2]);
-    auto path = filesystem::current_path();
-    ofstream configFile("config.txt");
-    if (configFile.is_open()) {
-        configFile << "UserName: " << userName << endl;
-        configFile.close();
+        if (argument == "config")
+        {
+            string argumentUser = string(argv[2]);
+            if (argumentUser == "user.id")
+            {
+                auto path = filesystem::current_path();
+                ofstream configFile(".config.txt");
+                string argumentUserName = string(argv[3]);
+                if (configFile.is_open())
+                {
+                    configFile << "UserName:" << argumentUserName << endl;
+                    configFile.close();
 
-        // Rename to hidden file
-        filesystem::rename("config.txt", ".config.txt");
+                    // Rename to hidden file
+                    //filesystem::rename("config.txt", ".config.txt");
 
-        cout << "\033[1;32mConfiguration file created successfully!\033[0m" << endl;
-    } else {
-        cout << "\033[1;31mFailed to create configuration file.\033[0m" << endl;
-    }
-}
+                    // cout << "\033[1;32mConfiguration file created successfully!\033[0m" << endl;
+                }
+            }
+            else if (argumentUser == "user.passwd")
+            {   
+                if (!config()){
+                    cout << RED"Please enter your User Id :) \n"END;
+                    return 0;
+                }
+                auto path = filesystem::current_path();
+                ofstream configFile(".config.txt" , ios::app);
+                string argumentUserName = string(argv[3]);
+                if (configFile.is_open())
+                {
+                    configFile << "Password:" << argumentUserName << endl;
+                    configFile.close();
 
-        else if (!config()){
+                    // Rename to hidden file
+                    //filesystem::rename("config.txt", ".config.txt");
+                }
+                cout << "\033[1;32mConfiguration file created successfully!\033[0m" << endl;
+
+                // auto path = filesystem::current_path();
+                // ofstream configFile("config.txt");
+                // if (configFile.is_open())
+                // {
+                //     configFile << "UserName: " << userName << endl;
+                //     configFile.close();
+
+                //     // Rename to hidden file
+                //     filesystem::rename("config.txt", ".config.txt");
+
+                //     cout << "\033[1;32mConfiguration file created successfully!\033[0m" << endl;
+                // }
+                // else
+                // {
+                //     cout << "\033[1;31mFailed to create configuration file.\033[0m" << endl;
+                // }
+            }
+            else if (argumentUser == "--list"){
+                if (!config()){
+                    cout << RED"User hasn't assign configuration \n"END;
+                    return 0;
+                }
+                string pass ;
+                cout << "Please Enter your password : ";
+                cin >> pass;
+                auto path = filesystem::current_path();
+                ifstream configFile(".config.txt");
+                string filePass;
+                string fileId ;
+
+                if (configFile.is_open()){
+                    getline(configFile,filePass);
+                    fileId = filePass.substr(filePass.find(":")+1); 
+                    getline(configFile,filePass);
+                    filePass = filePass.substr(filePass.find(":")+1); 
+                    if (filePass == pass){
+                        cout << "UserName : " << fileId << endl;
+                        cout << "PassWord : " << filePass << endl;
+                    }
+                    else {
+                        cout << RED "Please recheck your Password !!!\n"END;
+                    }
+                }
+            }
+            
+        }
+        else if (!config())
+        {
             cout << "There is not config:(\n";
             cout << YEL "First config your Self \n" END;
             cout << BLU "Type this <./a.out config (User name)>\n" END;
             return 0;
         }
-        
+
         // git init
-        
+
         else if (argument == "init")
         {
             gitClassObj.gitInit();
@@ -166,6 +238,7 @@ int main(int argc, char *argv[])
         //      gitClassObj.gitStatus();
         //  }
         // wrong arguments
+
         else
         {
             cout << RED "Invalid arguments" END << endl;
