@@ -181,10 +181,10 @@ It helps users understand how to use the version control system with ease 💡.
 
 # 👨‍🔬 Researchers & 👥 Contributors
 
-1. 👨‍💻 [Tirth Patel](https://github.com/Tirth9978)  
-2. 👨‍💻 [Raj Patel](https://github.com/Raj-Patel7807)  
-3. 👨‍💻 [Shlok Patel](https://github.com/Shlok-Patel-007)  
-4. 👨‍💻 [Prakriti Pandey](https://github.com/PrakritiPandey2024)
+1. 👨‍💻 [Tirth Patel(202401157)](https://github.com/Tirth9978)  
+2. 👨‍💻 [Raj Patel(202401152)](https://github.com/Raj-Patel7807)  
+3. 👨‍💻 [Shlok Patel(202401156)](https://github.com/Shlok-Patel-007)  
+4. 👨‍💻 [Prakriti Pandey(202401164)](https://github.com/PrakritiPandey2024)
 
 ---
 # 📚 Reference
