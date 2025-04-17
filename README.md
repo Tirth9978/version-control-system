@@ -151,17 +151,16 @@ Here `log` funtion gives us the inforantion of the commits we have did till now 
 
 ## 🧑‍💻 (1) Configuration of User
 
-We added a function called `config` ⚙️, which tracks the user login information 🪪.  
-The first time a user types `init` or any Git command, it prompts the user to configure their identity.
-
-![config](Images/image5.png)
-
-👉 To configure the user:
-
+We have added the configuration of user and it will give you the who did changes . 
+For that user must do configuration for usering the git commands . 
 ```
-./a.out config <User ID>
+./a.out config user.id <UserName>  (For user Name)
+      
+./a.ot config user.passwd <Password> (For Password)
 ```
-![config](Images/image6.png)
+
+![Config](Images/image7.png)
+
 
 ## 📖 (2) Addition of the `--help` Command
 
@@ -170,6 +169,15 @@ It helps users understand how to use the version control system with ease 💡.
 ```
 ./a.out --help
 ```
+---
+
+# 🌟 Future Ideas
+
+1. 🧑‍💻 Improve user configuration by allowing integration with platforms like **GitHub.com** and other remote repositories 🌐.  
+2. 📤📥 Add support for more Git-like features such as `push` and `pull` to interact with remote repositories.  
+3. 🌿 Implement **Branching Support** to allow users to create and switch between multiple development branches — just like in Git.  
+4. 🔀 Develop **Merge Functionality** to merge branches and handle basic conflict resolution with clarity.
+---
 
 # 👨‍🔬 Researchers & 👥 Contributors
 
@@ -177,4 +185,11 @@ It helps users understand how to use the version control system with ease 💡.
 2. 👨‍💻 [Raj Patel](https://github.com/Raj-Patel7807)  
 3. 👨‍💻 [Shlok Patel](https://github.com/Shlok-Patel-007)  
 4. 👨‍💻 [Prakriti Pandey](https://github.com/PrakritiPandey2024)
+
+---
+# 📚 Reference
+
+🙏 Special thanks to [Uzair Ahmed](https://github.com/uzairahmednasir) for the original idea and implementation. 
+
+🔗 GitHub Repository: [Version Control System](https://github.com/uzairahmednasir/version-control-system)
 
